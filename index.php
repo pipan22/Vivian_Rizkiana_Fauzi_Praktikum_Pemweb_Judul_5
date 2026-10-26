@@ -5,7 +5,7 @@
  * Dashboard Dokumentasi REST API dan Penampil Data MySQL via PDO.
  */
 
-require_once __DIR__ . '/config/database.php';
+require_once __DIR__ . '/database.php';
 
 $dbConnected = false;
 $errorMessage = '';
@@ -36,7 +36,7 @@ try {
     <header class="site-header">
         <div class="container header-brand">
             <a href="index.php" class="brand-logo" title="Beranda SIMA">
-                <img src="img/logo-sima.svg" alt="Logo Resmi SIMA Kampus" width="48" height="48">
+                <img src="logo-sima.svg" alt="Logo Resmi SIMA Kampus" width="48" height="48">
             </a>
             <div>
                 <h1>Sistem Informasi Data Mahasiswa (SIMA)</h1>
@@ -136,7 +136,7 @@ try {
                                     <tr>
                                         <td>#<?= htmlspecialchars($mhs['id']) ?></td>
                                         <td>
-                                            <img src="img/avatar-default.svg" alt="Foto <?= htmlspecialchars($mhs['nama']) ?>" class="avatar-img" width="36" height="36">
+                                            <img src="avatar-default.svg" alt="Foto <?= htmlspecialchars($mhs['nama']) ?>" class="avatar-img" width="36" height="36">
                                         </td>
                                         <td><strong><?= htmlspecialchars($mhs['npm']) ?></strong></td>
                                         <td><?= htmlspecialchars($mhs['nama']) ?></td>
